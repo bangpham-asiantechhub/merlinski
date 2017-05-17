@@ -553,19 +553,20 @@ main{
 /*==============Radio button style============*/
 input[type=radio]{
 	-webkit-appearance: none;
-	margin-top: 2px;
-	background-color: #ffffff;
-	height: 18px;
-	width:18px;
-	border-radius: 100%;
-	border: 2px solid #7f7f7f;	
+	opacity: 0;
+	//margin-top: 2px;
+	//background-color: #c8c8c8;
+	//height: 18px;
+	//width:18px;
+	//border-radius: 100%;
+	//border: 2px solid #7f7f7f;	
 }
-input[type='radio']:checked{
+/*input[type='radio']:checked{
 	background-image: url(../../assets/images/checked.png);
 	background-repeat: no-repeat;
 	background-position: center;
 
-}
+}*/
 
 /*==============Style File input===============*/
 .select-file{
@@ -831,4 +832,24 @@ $social-bg: url(../../assets/images/icon-soc.png);
 	border-top:solid 1px grey;
 	color: #d6d6d6;
 	p{margin-top:25px;}
+}
+input[type="radio"] + label:before {
+    display:inline-block;
+    content:"";
+    font-size:30px;
+    line-height:45px;
+    text-align:center;
+    color:#ccc;
+    background: #ffffff;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin: 0 10px;
+    border-radius:50%;  
+    border:1px solid grey;
+}
+input[type="radio"]:checked + label:before {
+    background-image: url(../../assets/images/checked.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }

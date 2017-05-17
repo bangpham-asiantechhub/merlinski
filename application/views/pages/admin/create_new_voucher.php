@@ -7,7 +7,7 @@
 	      		<div class="radio">
 	      			<div class="row">
 	      			<div class="col-sm-5 label-inline">
-	      				<label><input type="radio" name="gender" value="userdefined" checked >User defined</label>
+	      				<input id="code_1" type="radio" name="option_code" value="1" checked ><label for="code_1">User defined</label>
 	      			</div>
 	      			<div class="col-sm-7">
 	      				<input type="text" class="form-control" id="description">
@@ -23,7 +23,7 @@
     	 <label class="control-label col-sm-3 pull-left"></label>
 	      <div class="col-sm-9">	      		 
 	      		<div class="radio">
-	      			<label><input type="radio" name="gender" value="1"> Auto generation</label>	      			
+	      			<input id="code_2" type="radio" name="option_code" value="2"><label for="code_2">Auto generation</label>        			
 	      		</div>	           		
 	      		
 	      </div>
@@ -54,8 +54,8 @@
     <div class="form-group">
 	      <label class="control-label col-sm-3 pull-left" for="code">Uses times</label>
 	      <div class="col-sm-9">
-	      		<input type="radio" name="gender" value="userdefined" checked> Single      		
-	      		<input type="radio" name="gender" value="autogeneration"> Unlimited
+	      		<input id="use_1" type="radio" name="gender" value="0" checked><label for="use_1">Single</label>      		
+	      		<input id="use_2" type="radio" name="gender" value="1"><label for="use_2">Unlimited</label> 
 	      </div>
     </div>
     <div class="form-group">
